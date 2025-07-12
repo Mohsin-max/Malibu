@@ -1,0 +1,37 @@
+#pricing {
+    /* padding: 2rem 4rem; */
+    margin-top: 2rem;
+}
+#pricing-heading {
+    color: #8e8c8c;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+#pricing-subheading {
+    font-size: 2.5rem;
+    margin: .75rem 0;
+    text-transform: uppercase;
+}
+
+#pricing-packages {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #pricing {
+        /* padding: 1rem; */
+    }
+
+    #pricing-subheading {
+        font-size: 1.65rem;
+    }
+
+    #pricing-packages {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

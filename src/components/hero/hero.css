@@ -1,0 +1,200 @@
+#landing-hero {
+  background: #FFFFFF;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+
+#landing-hero-container {
+  max-width: 580px;
+  color: #4A4A6A; /* dark muted gray for body text */
+  z-index: 1;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#landing-hero-subheading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  color: #8A89B0; /* medium purple-gray */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+  letter-spacing: 0.08em;
+}
+
+#landing-hero-heading {
+  font-size: 3.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0;
+  color: #5A55C9; /* primary purple */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+  letter-spacing: 0.05em;
+}
+
+#landing-hero-description {
+  max-width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: #4A4A6A; /* dark muted gray */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+  line-height: 1.5;
+}
+
+#landing-hero-btn {
+  align-self: flex-start;
+  margin-top: 2rem;
+  background: #6C63FF;
+  padding: 1.1rem 3rem;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.5);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+  cursor: pointer;
+}
+
+#landing-hero-btn:hover {
+  background: #574FE6; /* darker purple */
+  box-shadow: 0 10px 25px rgba(87, 79, 230, 0.6);
+  transform: scale(1.05);
+}
+
+#trust-badge {
+  margin-top: 3rem;
+  font-weight: 600;
+  color: #9F9FBE; /* lighter gray-purple */
+  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1s;
+}
+
+#hero-image {
+  position: absolute;
+  right: 5rem;
+  top: 40%;
+  width: 350px;
+  max-width: 30vw;
+  z-index: 1;
+  overflow: hidden;
+  animation: floatUpDown 6s ease-in-out infinite;
+  background: white;
+}
+
+#hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 15px rgba(108, 99, 255, 0.9));
+  transition: filter 0.3s ease, transform 0.4s ease;
+  user-select: none;
+  pointer-events: none;
+}
+
+#hero-image img:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 750px) {
+  #landing-hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 1rem 3rem 1rem; /* more top padding */
+  }
+
+  #landing-hero-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 4rem; /* push down text more */
+  }
+
+  #landing-hero-subheading {
+    font-size: 1rem; /* keep original font size */
+    margin-bottom: 0.5rem;
+  }
+
+  #landing-hero-heading {
+    font-size: 2rem; /* smaller than before but not tiny */
+    line-height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #landing-hero-description {
+    font-size: 1rem; /* close to original */
+    margin-bottom: 1rem;
+  }
+
+  #landing-hero-btn {
+    display: inline-block;
+    margin: 2rem auto 0 auto; /* centered with top margin */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    background: #6C63FF;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  #landing-hero-btn:hover {
+    background: #574FE6;
+    box-shadow: 0 8px 20px rgba(87, 79, 230, 0.6);
+    transform: scale(1.05);
+  }
+
+  #hero-image {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 60%;
+    margin: 3rem auto 0 auto;
+  }
+}

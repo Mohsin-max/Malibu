@@ -1,0 +1,122 @@
+/* .reviews-card {
+    padding: 3rem 2rem;
+    background: #f3f3f3;
+    border-radius: 1rem;
+}
+
+.reviews-card-icon {
+    font-size: 2.5rem;
+    color: #3C3F92;
+    margin-bottom: 2rem;
+}
+
+.reviews-card-description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.reviews-card-name {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.reviews-card-location {
+    font-size: 1rem;
+    margin-top: -.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .reviews-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .reviews-card-name {
+        font-size: 1.5rem;
+    }
+} */
+
+
+.reviews-card {
+    position: relative;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem; /* slightly more rounded for a softer look */
+    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* lighter, softer shadow */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    overflow: hidden;
+    cursor: default;
+}
+
+.reviews-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px; /* thicker accent line */
+    width: 60px; /* shorter accent for more modern feel */
+    background-color: #3C3F92;
+    border-radius: 0 0 4px 4px;
+    transition: width 0.4s ease;
+}
+
+.reviews-card:hover {
+    transform: translateY(-10px); /* more noticeable lift */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15); /* stronger shadow */
+}
+
+.reviews-card:hover::before {
+    width: 100%; /* animate accent line expanding on hover */
+}
+
+.reviews-card-icon {
+    font-size: 3rem;
+    color: #3C3F92;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.reviews-card:hover .reviews-card-icon {
+    transform: scale(1.15) rotate(10deg); /* subtle icon animation on hover */
+}
+
+.reviews-card-description {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: #444; /* slightly darker text for readability */
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+    font-style: italic; /* add a bit of elegance */
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-card-name {
+    margin-top: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+}
+
+.reviews-card-location {
+    font-size: 1rem;
+    color: #777;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1000px) {
+    .reviews-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .reviews-card-name {
+        font-size: 1.4rem;
+    }
+}

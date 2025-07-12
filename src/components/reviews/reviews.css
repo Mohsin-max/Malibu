@@ -1,0 +1,13 @@
+#reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    #reviews {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 1rem; */
+    }
+}

@@ -1,0 +1,25 @@
+.benefits-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-card-heading-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.benefits-card-heading-wrapper > i {
+    margin-right: .7rem;
+    font-size: 1.2rem;
+    color: #3C3F92;
+}
+
+.benefits-card-heading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.benefits-card-description {
+    font-size: 1rem;
+}
