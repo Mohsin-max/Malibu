@@ -10,7 +10,7 @@ const Pricing = () => {
                 title="Our Pricing"
                 heading={
                     <>
-                    Pricing packages for <br />every budget
+                        Pricing packages for <br /> every budget
                     </>
                 }
             />
@@ -32,10 +32,25 @@ const Pricing = () => {
                         price="7950"
                         price_subheading="Starting"
                     />
+                    <Package
+                        heading="Mobile App"
+                        price="14999"
+                        price_subheading="Starting"
+                    />
+                    <Package
+                        heading="SEO"
+                        price="6999"
+                        price_subheading="Monthly Plan"
+                    />
+                    <Package
+                        heading="Digital Marketing"
+                        price="9999"
+                        price_subheading="Starting"
+                    />
                 </section>
             </section>
         </>
-    )
+    );
 };
 
 export default Pricing;

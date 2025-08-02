@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Pricing from "./components/pricing/Pricing";
 import Reviews from "./components/reviews/Reviews";
 import Services from "./components/services/Services";
+import ContactUs from "./components/Contact/contact";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Benefits />
         <Pricing />
         <Reviews />
+        <ContactUs/>
+        
       </Container>
       <Footer />
     </>
