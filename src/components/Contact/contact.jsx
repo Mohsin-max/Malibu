@@ -125,10 +125,11 @@ export default function ContactUs() {
                 required
               >
                 <option value="">Select Package</option>
-                <option value="Basic">Basic</option>
-                <option value="Standard">Standard</option>
-                <option value="Premium">Premium</option>
-                <option value="Custom">Custom Solution</option>
+                <option value="Web Development"><span>Web Development</span></option>
+                <option value="App Development">App Development</option>
+                <option value="Wordpress">Wordpress</option>
+                <option value="Seo">Seo</option>
+                <option value="Custom">Digital Marketing</option>
               </select>
               <span className="input-highlight"></span>
             </div>

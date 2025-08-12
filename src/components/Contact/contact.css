@@ -104,6 +104,12 @@
   cursor: pointer;
 }
 
+.select-group option{
+
+  display: flex;
+
+}
+
 .input-group input:focus,
 .select-group select:focus {
   outline: none;
